@@ -1,0 +1,25 @@
+@function pow($scaler, $exponent) {
+    $res: 1;
+    @if($exponent==0) {
+        @return 1;
+    }
+    @if ($exponent > 0) {
+        @for $i from 1 through $exponent {
+            $res: $res * $scaler;
+        }
+    }
+    @else {
+        @for $i from 1 through -$exponent {
+            $res: $res / $scaler;
+        }
+    }
+    @return $res;
+}
+:root{
+    font-size: calc(0.5em + 1vw);
+    $baseScalar:1.25;
+    --baseScalar:$baseScalar;
+    @each $s in 5,4,3,2,1,0,-1,-2,-3,-4,-5 {
+        --scalar-#{$s}: pow($baseScalar, $s)*1em;
+    }
+}
