@@ -4,8 +4,9 @@
 }
 
 :root {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 .fontSize\(\+5\) {
     font-size: $scalar-5;
@@ -51,12 +52,3 @@
     font-size: $scalar--5;
 }
 
-.row {
-    display: flex;
-    label {
-        flex-grow: 1
-    }
-    span{
-        flex-grow: 2
-    }
-}
