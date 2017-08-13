@@ -1,20 +1,48 @@
 :root {
-  font-size: calc(0.5em + 1vw);
-  --baseScalar: 1.25;
-  --scalar-5: 3.05176em;
-  --scalar-4: 2.44141em;
-  --scalar-3: 1.95313em;
-  --scalar-2: 1.5625em;
-  --scalar-1: 1.25em;
-  --scalar-0: 1em;
-  --scalar--1: 0.8em;
-  --scalar--2: 0.64em;
-  --scalar--3: 0.512em;
-  --scalar--4: 0.4096em;
-  --scalar--5: 0.32768em; }
+  font-size: calc(0.5em + 1vw); }
 
 * {
   box-sizing: border-box; }
 
 :root {
   font-family: 'Roboto', sans-serif; }
+
+.fontSize\(\+5\) {
+  font-size: 3.05176em; }
+
+.fontSize\(\+4\) {
+  font-size: 2.44141em; }
+
+.fontSize\(\+3\) {
+  font-size: 1.95313em; }
+
+.fontSize\(\+2\) {
+  font-size: 1.5625em; }
+
+.fontSize\(\+1\) {
+  font-size: 1.25em; }
+
+.fontSize\(0\) {
+  font-size: 1em; }
+
+.fontSize\(-1\) {
+  font-size: 0.8em; }
+
+.fontSize\(-2\) {
+  font-size: 0.64em; }
+
+.fontSize\(-3\) {
+  font-size: 0.512em; }
+
+.fontSize\(-4\) {
+  font-size: 0.4096em; }
+
+.fontSize\(-5\) {
+  font-size: 0.32768em; }
+
+.row {
+  display: flex; }
+  .row label {
+    flex-grow: 1; }
+  .row span {
+    flex-grow: 2; }

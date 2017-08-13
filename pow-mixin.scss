@@ -1,0 +1,17 @@
+    @function pow($scaler, $exponent) {
+        $res: 1;
+        @if($exponent==0) {
+            @return 1;
+        }
+        @if ($exponent > 0) {
+            @for $i from 1 through $exponent {
+                $res: $res * $scaler;
+            }
+        }
+        @else {
+            @for $i from 1 through -$exponent {
+                $res: $res / $scaler;
+            }
+        }
+        @return $res;
+    }

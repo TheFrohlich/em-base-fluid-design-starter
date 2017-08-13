@@ -1,10 +1,62 @@
-
-@import './scalar-defs';
+@import './scalar-defs-static';
 * {
     box-sizing: border-box;
 }
+
 :root {
     font-family: 'Roboto', sans-serif;
-
 }
 
+.fontSize\(\+5\) {
+    font-size: $scalar-5;
+}
+
+.fontSize\(\+4\) {
+    font-size: $scalar-4;
+}
+
+.fontSize\(\+3\) {
+    font-size: $scalar-3;
+}
+
+.fontSize\(\+2\) {
+    font-size: $scalar-2;
+}
+
+.fontSize\(\+1\) {
+    font-size: $scalar-1;
+}
+
+.fontSize\(0\) {
+    font-size: $scalar-0;
+}
+
+.fontSize\(-1\) {
+    font-size: $scalar--1;
+}
+
+.fontSize\(-2\) {
+    font-size: $scalar--2;
+}
+
+.fontSize\(-3\) {
+    font-size: $scalar--3;
+}
+
+.fontSize\(-4\) {
+    font-size: $scalar--4;
+}
+
+.fontSize\(-5\) {
+    font-size: $scalar--5;
+}
+
+.row {
+    display: flex;
+    label {
+        flex-grow: 1
+    }
+    span{
+        flex-grow: 2
+    }
+}

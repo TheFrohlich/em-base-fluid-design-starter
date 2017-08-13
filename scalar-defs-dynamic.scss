@@ -1,0 +1,10 @@
+@import './pow-mixin';
+:root{
+    font-size: calc(0.5em + 1vw);
+    $baseScalar:1.25;   
+    --baseScalar:$baseScalar;
+    @each $s in 5,4,3,2,1,0,-1,-2,-3,-4,-5 {
+        --scalar-#{$s}: pow($baseScalar, $s)*1em;
+    }
+}
+

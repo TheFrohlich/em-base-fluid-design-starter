@@ -1,0 +1,17 @@
+@import './pow-mixin';
+:root {
+    font-size: calc(0.5em + 1vw);
+}
+
+$baseScalar: 1.25;
+$scalar-5: pow($baseScalar, 5)*1em;
+$scalar-4: pow($baseScalar, 4)*1em;
+$scalar-3: pow($baseScalar, 3)*1em;
+$scalar-2: pow($baseScalar, 2)*1em;
+$scalar-1: pow($baseScalar, 1)*1em;
+$scalar-0: pow($baseScalar, 0)*1em;
+$scalar--1: pow($baseScalar, -1)*1em;
+$scalar--2: pow($baseScalar, -2)*1em;
+$scalar--3: pow($baseScalar, -3)*1em;
+$scalar--4: pow($baseScalar, -4)*1em;
+$scalar--5: pow($baseScalar, -5)*1em;
